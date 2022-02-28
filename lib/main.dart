@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:widgets_reference/page_view_widget.dart';
 import 'package:widgets_reference/tap_bar.dart';
 
+import 'date_picker.dart';
 import 'listview_builder_with_dismissible_childern.dart';
 
 void main() {
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const ListViewBuilderAndDismissible(),
+      home: AmazingDateWidget(),
     );
   }
 }
