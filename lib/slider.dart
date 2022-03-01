@@ -15,21 +15,34 @@ class _SliderWidgetState extends State<SliderWidget> {
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: Slider(
-          min: 0.0,
-          max: 100.0,
-          divisions: 20,
-          thumbColor: Colors.red,
-          activeColor: Colors.green,
-          inactiveColor: Colors.greenAccent,
-          label: 'Moo',
-          value: val,
-          onChanged: (value){
-            setState(() {
-              val = value;
-              print(val);
-            });
-          },
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              '${val.round()}',
+              style: const TextStyle(
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 40),
+            Slider(
+              min: 0.0,
+              max: 100.0,
+              divisions: 20,
+              thumbColor: Colors.red,
+              activeColor: Colors.green,
+              inactiveColor: Colors.greenAccent,
+              label: 'Moo',
+              value: val,
+              onChanged: (value){
+                setState(() {
+                  val = value;
+                  print(val);
+                });
+              },
+            ),
+          ],
         ),
       ),
     );

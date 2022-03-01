@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_reference/page_view_widget.dart';
+import 'package:widgets_reference/shadow_demo.dart';
 import 'package:widgets_reference/tap_bar.dart';
 
+import 'bottom_nav_bar.dart';
 import 'date_picker.dart';
 import 'dropdown_button_listtile.dart';
 import 'grid_view.dart';
@@ -21,18 +23,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: GridViewBuilder(),
+      home: BottomNavBar(),
     );
   }
 }
