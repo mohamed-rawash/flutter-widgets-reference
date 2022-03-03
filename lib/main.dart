@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:widgets_reference/page_view_widget.dart';
 import 'package:widgets_reference/shadow_demo.dart';
 import 'package:widgets_reference/tap_bar.dart';
+import 'package:widgets_reference/toast.dart';
+
 
 import 'bottom_nav_bar.dart';
+import 'color_picker.dart';
 import 'date_picker.dart';
 import 'dropdown_button_listtile.dart';
 import 'grid_view.dart';
@@ -25,7 +28,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: BottomNavBar(),
+      home: ColorPick(),
     );
   }
 }
