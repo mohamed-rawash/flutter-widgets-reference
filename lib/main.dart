@@ -9,6 +9,7 @@ import 'bottom_nav_bar.dart';
 import 'color_picker.dart';
 import 'date_picker.dart';
 import 'dropdown_button_listtile.dart';
+import 'grid_tile.dart';
 import 'grid_view.dart';
 import 'grid_view_builder.dart';
 import 'listview_builder_with_dismissible_childern.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ColorPick(),
+      home: GridTileW(),
     );
   }
 }
