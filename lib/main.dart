@@ -6,6 +6,7 @@ import 'package:widgets_reference/toast.dart';
 
 
 import 'bottom_nav_bar.dart';
+import 'buttons.dart';
 import 'color_picker.dart';
 import 'date_picker.dart';
 import 'dropdown_button_listtile.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: GridTileW(),
+      home: Buttons(),
     );
   }
 }
