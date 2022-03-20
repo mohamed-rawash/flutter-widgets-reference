@@ -13,6 +13,7 @@ import 'check.dart';
 import 'color_picker.dart';
 import 'date_picker.dart';
 import 'dropdown_button_listtile.dart';
+import 'expandable_list.dart';
 import 'grid_tile.dart';
 import 'grid_view.dart';
 import 'grid_view_builder.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: AnimatedContainerAnimation(),
+      home: ExpandableListW(),
     );
   }
 }

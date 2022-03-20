@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 
-class ModelBottomSheet extends StatelessWidget {
-  const ModelBottomSheet({Key? key}) : super(key: key);
+class ModalBottomSheet extends StatelessWidget {
+  const ModalBottomSheet({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,14 +13,14 @@ class ModelBottomSheet extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           child: const Text('Show Model Bottom Sheet'),
-          onPressed: () => modelBottomSheet(context),
+          onPressed: () => modalBottomSheet(context),
         ),
       ),
     );
   }
 }
 
-Future modelBottomSheet (BuildContext context) {
+Future modalBottomSheet (BuildContext context) {
   return showModalBottomSheet(context: context, builder: (context) => Column(
     crossAxisAlignment: CrossAxisAlignment.center,
     mainAxisSize: MainAxisSize.min,
