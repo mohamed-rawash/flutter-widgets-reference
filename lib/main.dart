@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets_reference/animations/route_transition/screen_one.dart';
 import 'package:widgets_reference/page_view_widget.dart';
 import 'package:widgets_reference/radio_button.dart';
 import 'package:widgets_reference/shadow_demo.dart';
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: TextForm(),
+      home: ScreenOne(),
     );
   }
 }
