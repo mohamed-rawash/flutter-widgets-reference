@@ -9,7 +9,7 @@ class DropDownAndListTile extends StatefulWidget {
 }
 
 class _DropDownAndListTileState extends State<DropDownAndListTile> {
-  List<String> repeatList = ['None', 'Daily', 'Weekly', 'Monthly'];
+  List<String> repeatList = ['None', 'Daily', 'Weekly', 'Monthly', 'one', 'aily', 'eekly', 'onthly'];
   String _selectedRepeat = 'None';
 
   @override
@@ -22,6 +22,7 @@ class _DropDownAndListTileState extends State<DropDownAndListTile> {
           subtitle: Text(_selectedRepeat, style: TextStyle(fontSize: 26,),),
           leading: const Icon(Icons.opacity, color: Colors.white, size: 24,),
           trailing: DropdownButton(
+            menuMaxHeight: 200,
             items: repeatList
                 .map(
                   (item) => DropdownMenuItem(

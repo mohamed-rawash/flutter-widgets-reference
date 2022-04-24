@@ -9,6 +9,7 @@ import 'package:widgets_reference/toast.dart';
 
 
 import 'animations/animated_container.dart';
+import 'animations/explicit_animation/rotate_animation.dart';
 import 'bar.dart';
 import 'bottom_nav_bar.dart';
 import 'buttons.dart';
@@ -20,6 +21,7 @@ import 'expandable_list.dart';
 import 'grid_tile.dart';
 import 'grid_view.dart';
 import 'grid_view_builder.dart';
+import 'image_piker_ref.dart';
 import 'listview_builder_with_dismissible_childern.dart';
 import 'model_bottom_sheet.dart';
 
@@ -38,7 +40,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ScreenOne(),
+      home: ImagePik(),
     );
   }
 }

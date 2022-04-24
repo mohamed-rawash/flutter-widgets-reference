@@ -28,6 +28,7 @@ class _ExpandableListWState extends State<ExpandableListW> {
               title: const Text(
                 'Your Acounts',
               ),
+              maintainState: true,
               onExpansionChanged: (val){
                 setState(() {
                   change = val;
